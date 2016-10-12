@@ -1,66 +1,142 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* close commented backslash hack */
+body {
+  margin: 0px; }
+
+.margin-body {
+  display: block;
+  margin-left: 280px; }
+
+.board-grp {
+  margin-top: -10px;
+  background: #fffdb9;
+  width: 100%; }
+
+.board-bg {
+  background: url("../img/board.jpg") no-repeat right;
+  background-size: cover;
+  width: 90%;
+  display: block;
+  margin: auto; }
+
+.paw {
+  margin-top: -80px;
+  position: relative; }
+
+.pole {
+  background: url("../img/pole.jpg") no-repeat;
+  height: 100px;
+  margin-top: -4px; }
+
+.face-img {
+  display: block;
+  position: absolute;
+  width: 1500px;
+  height: auto; }
+
+.face {
+  position: relative;
+  display: block;
+  height: 700px;
+  overflow: hidden;
+  width: 100%; }
+
 .float {
   float: right; }
 
-.sidebar {
-  display: block;
-  position: fixed;
-  height: 760px;
-  background: url("../img/rope.png") no-repeat; }
-  .sidebar a {
-    display: block;
-    padding: 100px 3%;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-size: 2em; }
+.float-left {
+  float: left; }
 
-.face {
-  float: right;
-  display: block; }
+.my-img {
+  display: block;
+  margin: auto; }
+
+.sidebar {
+  z-index: 9999;
+  position: fixed;
+  width: 300px;
+  height: 780px;
+  background: url("../img/rope.png") no-repeat; }
+
+.sidebar-item {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  display: block;
+  margin: 5% 15%;
+  padding: 60px 6%;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  background: white; }
+
+.item01:hover {
+  background: url("../img/about.jpg") no-repeat;
+  background-size: cover; }
+
+.item02:hover {
+  background: url("../img/work.jpg") no-repeat;
+  background-size: cover; }
+
+.item03:hover {
+  background: url("../img/contact.jpg") no-repeat;
+  background-size: cover; }
 
 .txt-heading {
   text-align: center;
-  font-size: 2 em; }
+  font-size: 1.8em;
+  color: white;
+  margin: 0px;
+  padding-top: 5%; }
 
 .txt-para {
+  padding: 2% 5%;
+  font-size: 1.2em;
+  color: white; }
+
+form {
+  clear: both; }
+
+.work-list {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  display: block;
+  width: 25%;
+  padding: 100px 5%;
+  background: white;
+  margin: 2%;
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  text-decoration: none; }
+
+.work-exp {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  display: block;
+  background: white;
   padding: 5%;
-  font-size: 1.5 em; }
-
-/* css Responsive design */
-.col-1 {
-  width: 8.33%; }
-
-.col-2 {
-  width: 16.66%; }
-
-.col-3 {
-  width: 25%; }
-
-.col-4 {
-  width: 33.33%; }
-
-.col-5 {
-  width: 41.66%; }
-
-.col-6 {
-  width: 50%; }
-
-.col-7 {
-  width: 58.33%; }
-
-.col-8 {
-  width: 66.66%; }
-
-.col-9 {
-  width: 75%; }
-
-.col-10 {
-  width: 83.33%; }
-
-.col-11 {
-  width: 91.66%; }
-
-.col-12 {
-  width: 100%; }
+  width: 85%;
+  margin: 2%; }
 
 /*# sourceMappingURL=style.css.map */
