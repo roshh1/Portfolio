@@ -24,14 +24,31 @@ body {
   display: block;
   margin-left: 280px; }
 
+#slider {
+  width: 660px;
+  height: 608px;
+  overflow: hidden; }
+
+.slides {
+  display: block;
+  width: 6000px;
+  height: 608px;
+  margin: 0;
+  padding: 0; }
+
+.slide {
+  float: left;
+  list-style-type: none;
+  width: 660px;
+  height: 608px; }
+
 .board-grp {
   margin-top: -10px;
   background: #fffdb9;
   width: 100%; }
 
 .board-bg {
-  background: url("../img/board.jpg") no-repeat right;
-  background-size: cover;
+  background: #201f24;
   width: 90%;
   display: block;
   margin: auto; }
@@ -68,7 +85,7 @@ body {
   display: block;
   margin: auto; }
 
-.sidebar {
+#sidebar {
   z-index: 9999;
   position: fixed;
   width: 300px;
@@ -112,22 +129,38 @@ body {
   font-size: 1.2em;
   color: white; }
 
-form {
-  clear: both; }
+.form {
+  clear: both;
+  margin: 5%; }
 
 .work-list {
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
   display: block;
-  width: 25%;
-  padding: 100px 5%;
+  width: 45%;
+  height: 200px;
   background: white;
   margin: 2%;
   text-align: center;
   font-size: 2em;
   color: black;
   text-decoration: none; }
+
+.menu {
+  display: none; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 800px;
+  height: 1000px; }
+  .overlay a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
 
 .work-exp {
   -webkit-border-radius: 12px;
@@ -137,6 +170,37 @@ form {
   background: white;
   padding: 5%;
   width: 85%;
-  margin: 2%; }
+  margin: 2%;
+  display: none; }
+
+@media (max-width: 993px) {
+  .face, .paw, .bottom {
+    display: none; }
+
+  #sidebar {
+    top: 0px;
+    margin-left: -50px; }
+
+  .sidebar-item {
+    margin-left: 25%; }
+
+  .margin-body {
+    margin-left: 235px; } }
+@media (max-width: 768px) {
+  .face, .paw, .bottom {
+    display: none; }
+
+  .margin-body {
+    margin-left: 0px; }
+
+  #sidebar {
+    left: -300px;
+    margin-left: 0px; }
+
+  .sidebar-item {
+    margin-left: 12%; }
+
+  .menu {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
